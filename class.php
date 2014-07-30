@@ -1,8 +1,8 @@
 <?php
 /**
- * Registers IssueM's Leaky Paywall class
+ * Registers zeen101's Leaky Paywall class
  *
- * @package IssueM's Leaky Paywall
+ * @package zeen101's Leaky Paywall
  * @since 1.0.0
  */
 
@@ -11,9 +11,9 @@
  *
  * @since 1.0.0
  */
-if ( ! class_exists( 'IssueM_Leaky_Paywall_bbPress' ) ) {
+if ( ! class_exists( 'Leaky_Paywall_bbPress' ) ) {
 	
-	class IssueM_Leaky_Paywall_bbPress {
+	class Leaky_Paywall_bbPress {
 		
 		/**
 		 * Class constructor, puts things in motion

@@ -1,16 +1,16 @@
 <?php
 /**
- * Main PHP file used to for initial calls to IssueM's Leak Paywall classes and functions.
+ * Main PHP file used to for initial calls to zeen101's Leak Paywall classes and functions.
  *
- * @package IssueM's Leak Paywall - bbPress
+ * @package zeen101's Leak Paywall - bbPress
  * @since 1.0.0
  */
  
 /*
-Plugin Name: IssueM's Leaky Paywall - bbPress
+Plugin Name: zeen101's Leaky Paywall - bbPress
 Plugin URI: http://zeen101.com/
-Description: A premium leaky paywall add-on for WordPress and IssueM.
-Author: IssueM Development Team
+Description: A premium leaky paywall add-on for the Leaky Paywall for WordPress plugin.
+Author: zeen101 Development Team
 Version: 1.0.0
 Author URI: http://issuem.com/
 Tags:
@@ -21,7 +21,7 @@ if ( !defined( 'ZEEN101_STORE_URL' ) )
 	define( 'ZEEN101_STORE_URL',	'http://zeen101.com' );
 	
 define( 'ISSUEM_LP_BBP_NAME', 		'Leaky Paywall - bbPress' );
-define( 'ISSUEM_LP_BBP_SLUG', 		'issuem-leaky-paywall-bbpress' );
+define( 'ISSUEM_LP_BBP_SLUG', 		'leaky-paywall-bbpress' );
 define( 'ISSUEM_LP_BBP_VERSION', 	'1.0.0' );
 define( 'ISSUEM_LP_BBP_DB_VERSION', '1.0.0' );
 define( 'ISSUEM_LP_BBP_URL', 		plugin_dir_url( __FILE__ ) );
@@ -43,11 +43,11 @@ function issuem_leaky_paywall_bbpress_plugins_loaded() {
 		require_once( 'class.php' );
 	
 		// Instantiate the Pigeon Pack class
-		if ( class_exists( 'IssueM_Leaky_Paywall_bbPress' ) ) {
+		if ( class_exists( 'Leaky_Paywall_bbPress' ) ) {
 			
 			global $dl_pluginissuem_leaky_paywall_bbpress;
 			
-			$dl_pluginissuem_leaky_paywall_bbpress = new IssueM_Leaky_Paywall_bbPress();
+			$dl_pluginissuem_leaky_paywall_bbpress = new Leaky_Paywall_bbPress();
 			
 			require_once( 'functions.php' );
 				
