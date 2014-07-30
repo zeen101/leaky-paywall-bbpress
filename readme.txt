@@ -20,7 +20,7 @@ You can follow this plugins development on [GitHub](https://github.com/zeen101/i
 
 == Frequently Asked Questions ==
 
-= What are the minimum requirements for zeen101's Leaky Paywall - Article Count Nag? =
+= What are the minimum requirements for zeen101's Leaky Paywall - bbPress? =
 
 You must have:
 
@@ -28,7 +28,7 @@ You must have:
 * PHP 5
 * zeen101's Leaky Paywall version 2.0.0 or later
 
-= How is zeen101's Leaky Paywall Licensed? =
+= How is zeen101's Leaky Paywall - bbPress addon Licensed? =
 
 * Leaky Paywall - bbPress is GPL
 

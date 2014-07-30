@@ -2,14 +2,14 @@
 <div id="it-exchange-content-restricted" class="it-exchange-wrap">
     <?php do_action( 'leaky_paywall_bbpress_content_topic_is_restricted_begin_wrap' ); ?>
     <?php
-	global $dl_pluginissuem_leaky_paywall;
-	$lp_settings = get_issuem_leaky_paywall_settings();
+	global $leaky_paywall;
+	$lp_settings = get_leaky_paywall_settings();
 	
 	$message  = '<div id="leaky_paywall_message">';
 	if ( !is_issuem_leaky_subscriber_logged_in() ) {
-		$message .= $dl_pluginissuem_leaky_paywall->replace_variables( stripslashes( $lp_settings['subscribe_login_message'] ) );
+		$message .= $leaky_paywall->replace_variables( stripslashes( $lp_settings['subscribe_login_message'] ) );
 	} else {
-		$message .= $dl_pluginissuem_leaky_paywall->replace_variables( stripslashes( $lp_settings['subscribe_upgrade_message'] ) );
+		$message .= $leaky_paywall->replace_variables( stripslashes( $lp_settings['subscribe_upgrade_message'] ) );
 	}
 	$message .= '</div>';
 

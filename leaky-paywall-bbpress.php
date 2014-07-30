@@ -7,7 +7,7 @@
  */
  
 /*
-Plugin Name: zeen101's Leaky Paywall - bbPress
+Plugin Name: Leaky Paywall - bbPress
 Plugin URI: http://zeen101.com/
 Description: A premium leaky paywall add-on for the Leaky Paywall for WordPress plugin.
 Author: zeen101 Development Team
@@ -34,7 +34,7 @@ define( 'ISSUEM_LP_BBP_REL_DIR', 	dirname( ISSUEM_LP_BBP_BASENAME ) );
  *
  * @since 1.0.0
  */
-function issuem_leaky_paywall_bbpress_plugins_loaded() {
+function leaky_paywall_bbpress_plugins_loaded() {
 	
 	include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
@@ -45,9 +45,9 @@ function issuem_leaky_paywall_bbpress_plugins_loaded() {
 		// Instantiate the Pigeon Pack class
 		if ( class_exists( 'Leaky_Paywall_bbPress' ) ) {
 			
-			global $dl_pluginissuem_leaky_paywall_bbpress;
+			global $leaky_paywall_bbpress;
 			
-			$dl_pluginissuem_leaky_paywall_bbpress = new Leaky_Paywall_bbPress();
+			$leaky_paywall_bbpress = new Leaky_Paywall_bbPress();
 			
 			require_once( 'functions.php' );
 				
@@ -58,14 +58,14 @@ function issuem_leaky_paywall_bbpress_plugins_loaded() {
 	
 	} else {
 	
-		add_action( 'admin_notices', 'issuem_leaky_paywall_bbpress_requirement_nag' );
+		add_action( 'admin_notices', 'leaky_paywall_bbpress_requirement_nag' );
 		
 	}
 
 }
-add_action( 'plugins_loaded', 'issuem_leaky_paywall_bbpress_plugins_loaded', 4815162342 ); //wait for the plugins to be loaded before init
+add_action( 'plugins_loaded', 'leaky_paywall_bbpress_plugins_loaded', 4815162342 ); //wait for the plugins to be loaded before init
 
-function issuem_leaky_paywall_bbpress_requirement_nag() {
+function leaky_paywall_bbpress_requirement_nag() {
 	?>
 	<div id="leaky-paywall-requirement-nag" class="update-nag">
 		<?php _e( 'You must have the Leaky Paywall plugin activated to use the Leaky Paywall bbPress plugin.' ); ?>

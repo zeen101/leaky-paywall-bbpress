@@ -22,12 +22,12 @@ if ( ! class_exists( 'Leaky_Paywall_bbPress' ) ) {
 		 */
 		function __construct() {
 			
-			add_action( 'issuem_leaky_paywall_is_restricted_content', array( $this, 'issuem_leaky_paywall_is_restricted_content' ) );
+			add_action( 'leaky_paywall_is_restricted_content', array( $this, 'leaky_paywall_is_restricted_content' ) );
 			add_filter( 'bbp_get_template_stack', array( $this, 'bbp_get_template_stack' ), 10 );
 
 		}
 		
-		function issuem_leaky_paywall_is_restricted_content() {
+		function leaky_paywall_is_restricted_content() {
 		
 			if ( is_bbpress() ) {
 				add_filter( 'bbp_get_template_part', array( $this, 'bbp_get_template_part' ), 15, 3 );
