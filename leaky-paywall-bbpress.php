@@ -38,7 +38,8 @@ function leaky_paywall_bbpress_plugins_loaded() {
 	
 	include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
-	if ( is_plugin_active( 'issuem-leaky-paywall/issuem-leaky-paywall.php' ) ) {
+	if ( is_plugin_active( 'issuem-leaky-paywall/issuem-leaky-paywall.php' ) 
+		|| is_plugin_active( 'leaky-paywall/leaky-paywall.php' ) ) {
 
 		require_once( 'class.php' );
 	
