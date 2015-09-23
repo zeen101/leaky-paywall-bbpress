@@ -6,7 +6,7 @@
 	$lp_settings = get_leaky_paywall_settings();
 	
 	$message  = '<div id="leaky_paywall_message">';
-	if ( !is_issuem_leaky_subscriber_logged_in() ) {
+	if ( !is_leaky_subscriber_logged_in() ) {
 		$message .= $leaky_paywall->replace_variables( stripslashes( $lp_settings['subscribe_login_message'] ) );
 	} else {
 		$message .= $leaky_paywall->replace_variables( stripslashes( $lp_settings['subscribe_upgrade_message'] ) );

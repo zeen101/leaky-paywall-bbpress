@@ -29,7 +29,7 @@ if ( ! class_exists( 'Leaky_Paywall_bbPress' ) ) {
 		
 		function leaky_paywall_is_restricted_content() {
 		
-			if ( is_bbpress() ) {
+			if ( function_exists( 'is_bbpress' ) && is_bbpress() ) {
 				add_filter( 'bbp_get_template_part', array( $this, 'bbp_get_template_part' ), 15, 3 );
 			}
 
