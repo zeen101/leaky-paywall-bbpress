@@ -11,7 +11,7 @@ Plugin Name: Leaky Paywall - bbPress
 Plugin URI: http://zeen101.com/
 Description: A premium leaky paywall add-on for the Leaky Paywall for WordPress plugin.
 Author: zeen101 Development Team
-Version: 1.0.0
+Version: 1.1.0
 Author URI: http://issuem.com/
 Tags:
 */
@@ -22,7 +22,7 @@ if ( !defined( 'ZEEN101_STORE_URL' ) )
 	
 define( 'ISSUEM_LP_BBP_NAME', 		'Leaky Paywall - bbPress' );
 define( 'ISSUEM_LP_BBP_SLUG', 		'leaky-paywall-bbpress' );
-define( 'ISSUEM_LP_BBP_VERSION', 	'1.0.0' );
+define( 'ISSUEM_LP_BBP_VERSION', 	'1.1.0' );
 define( 'ISSUEM_LP_BBP_DB_VERSION', '1.0.0' );
 define( 'ISSUEM_LP_BBP_URL', 		plugin_dir_url( __FILE__ ) );
 define( 'ISSUEM_LP_BBP_PATH', 		plugin_dir_path( __FILE__ ) );
