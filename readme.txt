@@ -3,7 +3,7 @@ Contributors: layotte, peterericson
 Tags: bbpress, metered, paywall, leaky, wordpress, magazine, news, blog, articles, restricted, content
 Requires at least: 3.0
 Tested up to: 4.5 
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 
 Integration zeen101's Leaky Paywall WordPress plugin with bbPress. More info at http://zeen101.com
 
@@ -33,6 +33,9 @@ You must have:
 * Leaky Paywall - bbPress is GPL
 
 == Changelog ==
+= 1.2.0 =
+* Fixing bad calls to non-existant functions 
+
 = 1.1.0 =
 * Updates for Public version of Leaky Paywall
 * Add function check for is_bbpress
